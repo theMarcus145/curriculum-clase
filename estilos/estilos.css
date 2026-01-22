@@ -80,7 +80,8 @@ section {
     font-size: 0.8em;
     background-image: url("../imgs/lgrey008.jpg");
     width: 100%;
-    display: table;
+    display: flex;
+    flex-direction: column;
 }
 
 /* clearfix */
@@ -97,14 +98,15 @@ section {
 
 /* Artículos */
 article {
-    width: 240px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     border: 1px solid lightgray;
     background-color: white;
-    text-align: center;
-    line-height: 1.8em;
-    padding: 5px 5px 22px 5px;
-    margin: 30px;
-    float: left;
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
 }
 
 /* Cabecera de artículos */
@@ -150,4 +152,8 @@ footer a {
 
 #mail{
     height: 213px;
+}
+
+p{
+    margin: 10px;   
 }
